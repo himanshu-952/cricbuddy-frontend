@@ -14,6 +14,7 @@ export default function AllMatches() {
     async function fetchAll() {
       try {
         const res = await api.get('/all-matches');
+        console.log("✅ Response from backend:", res.data);
         setMatches(res.data);
       } catch (err) {
         console.error('Error fetching all matches:', err);
