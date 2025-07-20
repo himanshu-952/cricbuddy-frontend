@@ -1,0 +1,48 @@
+.fantasy-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.player-card {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #fdfdfd;
+  transition: 0.2s;
+}
+
+.player-card:hover {
+  background-color: #f0f0f0;
+}
+
+.player-card.selected {
+  background-color: #00e6b8;
+  color: black;
+  font-weight: bold;
+  border-color: #00b89c;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.msg {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #0c6b2e;
+}
